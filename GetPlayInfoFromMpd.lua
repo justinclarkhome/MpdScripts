@@ -2,13 +2,14 @@ function trim(s)
   return (s:gsub("^%s*(.-)%s*$", "%1"))
 end
 
---### MPD servers to scan ###
+--### Define mpd servers to scan ###
 
 mpd_local={}
 mpd_local["host"]="localhost"
 mpd_local["port"]="6600"
 
-mpd_instances={mpd_bedroom, mpd_livingroom, mpd_local}
+# and add them in here
+mpd_instances={mpd_local}
 
 function RunProcess(run_string)
     local handle=io.popen(run_string)
