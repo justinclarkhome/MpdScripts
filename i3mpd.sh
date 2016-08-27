@@ -1,7 +1,9 @@
+# path to the lua script
 script="/home/someone/GitHub/MpdScripts/GetPlayInfoFromMpd.lua"
 
 echo "MPD: idle"
 
+# point this to your i3status config file
 i3status -c /home/someone/.config/i3status/config | while :
      do
          read line
